@@ -6,9 +6,9 @@
 
 #Modify these variables as you wish
 DIR_TO_DOWNLOAD=/opt/mysql/packages
-MYSQL_PWD="Root#123"
+MYSQL_PWD="Root123"
 REMOTE_USER=remote
-REMOTE_PWD="Remote#123"
+REMOTE_PWD="Remote123"
 
 mkdir -p $DIR_TO_DOWNLOAD
 
