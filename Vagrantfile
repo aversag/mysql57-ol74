@@ -18,8 +18,8 @@ Vagrant.configure(2) do |config|
     mysqlserver.vm.network :forwarded_port, host: 23306, guest: 3306
     
     mysqlserver.vm.provision :shell, path: "https://raw.githubusercontent.com/alastori/mysql57-ol74/master/download-git-repo.sh", privileged: true
-    mysqlserver.vm.provision :shell, path: "https://raw.githubusercontent.com/alastori/mysql57-ol74/master/provision-mysql-yum-repo-el7.sh", privileged: true
-    mysqlserver.vm.provision :shell, path: "https://raw.githubusercontent.com/alastori/mysql57-ol74/master/provision-mysql-community-57-el7-yum.sh", privileged: true
+    mysqlserver.vm.provision :shell, path: "https://raw.githubusercontent.com/Hydrelis/mysql57-ol74/master/provision-mysql-yum-repo-el7.sh", privileged: true
+    mysqlserver.vm.provision :shell, path: "https://raw.githubusercontent.com/Hydrelis/mysql57-ol74/master/provision-mysql-community-57-el7-yum.sh", privileged: true
 
   end  
   
