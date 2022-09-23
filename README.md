@@ -25,6 +25,10 @@ On Windows, Vagrant may require an updated version of [Powershell](https://docs.
 ## How to use
 - Create a directory to be the home of your Virtual Machine;
 - Download [this Vagrantfile](https://raw.githubusercontent.com/alastori/mysql57-ol74/master/Vagrantfile) to this new directory;
+- Install timezone plugin :
+```sh
+vagrant plugin install vagrant-timezone
+```
 - Install Oracle Linux 7.4 box (image) with ```vagrant box add --name ol74 http://yum.oracle.com/boxes/oraclelinux/ol74/ol74.box```.
   - It will download Oracle Linux 7 (~410MB), so this will take several minutes to finish;
   - You can check [Oracle Boxes website](http://yum.oracle.com/boxes) for updates;
