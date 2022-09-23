@@ -13,6 +13,11 @@ Vagrant.configure(2) do |config|
       vb.cpus = 2
   end
   
+  # Set timezone
+  if Vagrant.has_plugin?("vagrant-timezone")
+    config.timezone.value = "Europe/Paris"
+  end
+  
   config.vm.define "mysqlserver" do |mysqlserver|
     mysqlserver.vm.hostname = "vmmysqlserver"
     mysqlserver.vm.network :forwarded_port, host: 23306, guest: 3306
